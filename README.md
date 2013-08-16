@@ -8,7 +8,7 @@ To get an Android project setup:
 
 1. Install the Android SDK. On Mac OS X just run:
 
-       > brew install android-sdk
+        > brew install android-sdk
 
 2. Set ANDROID_HOME to '/usr/local/Cellar/android-sdk/<version>'.
 

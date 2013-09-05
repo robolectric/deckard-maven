@@ -1,6 +1,8 @@
 # Deckard
 
-A simple template for Android development using Robolectric, Maven and IntelliJ.
+Deckard is the simplest possible Android project that uses Robolectric for testing and Maven to build. It has one Activity (with an empty layout), and a Robolectric test that creates that Activity. 
+
+Deckard also imports seamlessly into IntelliJ, due to IntelliJ's support for Maven. Just import the pom.xml.
 
 ## Setup
 
@@ -23,6 +25,6 @@ To get an Android project setup:
 
         > mvn test
         
-6. Import the project into IntelliJ by selecting 'Import Project' in IntelliJ and selecting the project's `pom.xml`. When prompted to pick an SDK you just need to select the Android SDK home and your JDK.
+6. Optionally, import the project into IntelliJ by selecting 'Import Project' in IntelliJ and selecting the project's `pom.xml`. When prompted to pick an SDK you just need to select the Android SDK home and your JDK.
 
 7. Build an app. Win.

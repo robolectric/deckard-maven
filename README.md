@@ -29,10 +29,12 @@ To start a new Android project:
     (cd maven-android-sdk-deployer && mvn install -P 4.3)
     ```
 
-5. Check this repo out.
+5. Download Deckard from GitHub:
 
     ```bash
-    git clone https://github.com/robolectric/deckard.git my-new-project
+    wget https://github.com/robolectric/deckard/archive/master.zip
+    unzip master.zip
+    mv deckard-master my-new-project
     ```
 
 6. In the project directory you should be able to run the tests:

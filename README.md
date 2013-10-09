@@ -6,25 +6,42 @@ Deckard also imports seamlessly into IntelliJ, due to IntelliJ's support for Mav
 
 ## Setup
 
-To get an Android project setup:
+To start a new Android project:
 
-1. Install the Android SDK. On Mac OS X just run:
+1. Install the [Android SDK](http://developer.android.com/sdk/index.html). On Mac OS X with [Homebrew](http://brew.sh/) just run:
 
-        > brew install android-sdk
+    ```bash
+    brew install android-sdk
+    ```
 
-2. Set `ANDROID_HOME` to '/usr/local/Cellar/android-sdk/<version>'.
+2. Set your `ANDROID_HOME` environment variable to `/usr/local/Cellar/android-sdk/<version>`.
 
-3. Run the Android SDK GUI and install API 16 and any other APIs you might need. You can start the GUI like so:
+3. Run the Android SDK GUI and install API 18 and any other APIs you might need. You can start the GUI like so:
 
-        > android
+    ```bash
+    android
+    ```
 
+4. Use [Maven Android SDK Deployer](https://github.com/mosabua/maven-android-sdk-deployer) to maven-ize the Android SDK:
 
-4. Check this repo out.
+    ```bash
+    git clone https://github.com/mosabua/maven-android-sdk-deployer.git
+    (cd maven-android-sdk-deployer && mvn install -P 4.3)
+    ```
 
-5. In the project directory you should be able to run the tests:
+5. Check this repo out.
 
-        > mvn test
+    ```bash
+    git clone https://github.com/pivotal/deckard.git my-new-project
+    ```
+
+6. In the project directory you should be able to run the tests:
+
+    ```bash
+    cd my-new-project
+    mvn clean test
+    ```
         
-6. Optionally, import the project into IntelliJ by selecting 'Import Project' in IntelliJ and selecting the project's `pom.xml`. When prompted to pick an SDK you just need to select the Android SDK home and your JDK.
+7. Optionally, import the project into IntelliJ (or Eclipse) by selecting 'Import Project' in IntelliJ and selecting the project's `pom.xml`. When prompted to pick an SDK you just need to select the Android SDK home and your JDK.
 
-7. Build an app. Win.
+8. Build an app. Win.

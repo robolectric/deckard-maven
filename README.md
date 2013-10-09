@@ -32,7 +32,7 @@ To start a new Android project:
 5. Check this repo out.
 
     ```bash
-    git clone https://github.com/pivotal/deckard.git my-new-project
+    git clone https://github.com/robolectric/deckard.git my-new-project
     ```
 
 6. In the project directory you should be able to run the tests:

@@ -6,7 +6,7 @@ Deckard also imports seamlessly into IntelliJ, due to IntelliJ's support for Mav
 
 ## Setup
 
-*Note: These instructions assume you have a [JDK](http://www.oracle.com/technetwork/java/javase/downloads/index.html) installed.*
+*Note: These instructions assume you have a Java 1.6 [JDK](http://www.oracle.com/technetwork/java/javase/downloads/index.html) installed.*
 
 To start a new Android project:
 

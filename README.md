@@ -21,7 +21,7 @@ To start a new Android project:
     ```bash
     android
     ```
-4. Install Maven. On OS X this can is easiest with [Homebrew](http://brew.sh/) (unfortuanetly we have to install Maven 3.0.x as Maven 3.1.x is currently buggy on OS X):
+4. Install Maven if you haven't already (run `mvn` to check). On OS X this can is easiest with [Homebrew](http://brew.sh/) (unfortuanetly we have to install Maven 3.0.x as Maven 3.1.x is currently buggy on OS X):
 	```bash
 	brew install homebrew/versions/maven30
 	```

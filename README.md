@@ -23,9 +23,9 @@ To start a new Android project:
     ```bash
     android
     ```
-4. Install Maven if you haven't already (run `mvn` to check). On OS X (as before) this is easiest with [Homebrew](http://brew.sh/) (unfortunately we have to install Maven 3.0.x as Maven 3.1.x is currently buggy on OS X):
+4. Install Maven if you haven't already (run `mvn` to check). On OS X (as before) this is easiest with [Homebrew](http://brew.sh/):
 	```bash
-	brew install homebrew/versions/maven30
+	brew install maven
 	```
 
 5. Use [Maven Android SDK Deployer](https://github.com/mosabua/maven-android-sdk-deployer) to maven-ize the Android SDK:

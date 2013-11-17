@@ -17,7 +17,7 @@ To start a new Android project:
     brew install android-sdk
     ```
 
-2. Set your `ANDROID_HOME` environment variable to `/usr/local/Cellar/android-sdk/<version>`.
+2. Set your `ANDROID_HOME` environment variable to `/usr/local/opt/android-sdk`.
 
 3. Run the Android SDK GUI and install API 18 and any other APIs you might need. You can start the GUI like so:
     ```bash

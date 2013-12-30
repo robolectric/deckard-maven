@@ -27,6 +27,7 @@ To start a new Android project:
 	```bash
 	brew install maven
 	```
+	* If you are planning on using Android SDK >=4.4, you need maven >=3.1.1.  Instuctions for its installation are available [here](http://myjeeva.com/how-to-do-maven-upgrade-in-mac-os-x.html).
 
 5. Use [Maven Android SDK Deployer](https://github.com/mosabua/maven-android-sdk-deployer) to maven-ize the Android SDK:
     ```bash

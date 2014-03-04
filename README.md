@@ -1,6 +1,6 @@
 # Deckard (for Maven)
 
-[![Build Status](https://secure.travis-ci.org/robolectric/deckard.png?branch=master)](http://travis-ci.org/robolectric/deckard)
+[![Build Status](https://secure.travis-ci.org/robolectric/deckard-maven.png?branch=master)](http://travis-ci.org/robolectric/deckard-maven)
 
 Deckard is the simplest possible Android project that uses Robolectric for testing and Maven to build. It has one Activity (with an empty layout), and a Robolectric test that creates that Activity. 
 

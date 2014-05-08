@@ -5,6 +5,7 @@
 Deckard is the simplest possible Android project that uses Robolectric for testing and Maven to build. It has one Activity (with an empty layout), and a Robolectric test that creates that Activity. 
 
 Deckard also imports seamlessly into IntelliJ, due to IntelliJ's support for Maven. Just import the pom.xml.
+Eclipse is also supported. Install the [m2e-android](http://rgladwell.github.io/m2e-android/) plugin for Eclipse, and import the project as a Maven project.
 
 ## Setup
 

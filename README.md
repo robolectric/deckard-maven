@@ -6,6 +6,10 @@ Deckard is the simplest possible Android project that uses Robolectric for testi
 
 Deckard also imports seamlessly into IntelliJ, due to IntelliJ's support for Maven. Just import the pom.xml.
 
+Eclipse is also supported. Install the [m2e-android](http://rgladwell.github.io/m2e-android/) plugin for Eclipse, and import the project as a Maven project.
+After importing into Eclipse, you have to mark the consume-aar goal as ignored, since aar consumption is not yet supported by m2e-android.
+To do this, simply apply the Quick fix on the "Plugin execution not covered by lifecycle configuration" error.
+
 ## Setup
 
 *Note: These instructions assume you have a Java 1.6 [JDK](http://www.oracle.com/technetwork/java/javase/downloads/index.html) installed.*

@@ -5,9 +5,7 @@ android:
      - addon-google_apis-google-18
 
 before_install:
-    - git clone https://github.com/mosabua/maven-android-sdk-deployer.git
-    - ( cd maven-android-sdk-deployer ; mvn install -P 4.3 )
-    
+    - ./setup.sh
+
 script:
     - mvn test
-

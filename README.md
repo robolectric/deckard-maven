@@ -2,7 +2,7 @@
 
 [![Build Status](https://secure.travis-ci.org/robolectric/deckard-maven.png?branch=master)](http://travis-ci.org/robolectric/deckard-maven)
 
-Deckard is the simplest possible Android project that uses Robolectric for testing and Maven to build. It has one Activity (with an empty layout), and a Robolectric test that creates that Activity. 
+Deckard is the simplest possible Android project that uses Robolectric for testing and Maven to build. It has one Activity (with an empty layout), and a Robolectric test that creates that Activity.
 
 Deckard also imports seamlessly into IntelliJ, due to IntelliJ's support for Maven. Just import the pom.xml.
 
@@ -23,7 +23,8 @@ To start a new Android project:
 
 2. Set your `ANDROID_HOME` environment variable to `/usr/local/opt/android-sdk`.
 
-3. Run the Android SDK GUI and install API 18 and any other APIs you might need. You can start the GUI like so:
+3. Run the Android SDK GUI and install API 18, the Support libraries and any
+   other APIs you might need. You can start the GUI like so:
     ```bash
     android
     ```
@@ -31,19 +32,17 @@ To start a new Android project:
 	```bash
 	brew install maven
 	```
-	* If you are planning on using Android SDK >=4.4, you need maven >=3.1.1.  Instuctions for its installation are available [here](http://myjeeva.com/how-to-do-maven-upgrade-in-mac-os-x.html).
 
-5. Use [Maven Android SDK Deployer](https://github.com/mosabua/maven-android-sdk-deployer) to maven-ize the Android SDK:
-    ```bash
-    git clone https://github.com/mosabua/maven-android-sdk-deployer.git
-    (cd maven-android-sdk-deployer && mvn install -P 4.3)
-    ```
-
-6. Download Deckard from GitHub:
+5. Download Deckard from GitHub:
     ```bash
     wget https://github.com/robolectric/deckard/archive/master.zip
     unzip master.zip
-    mv deckard-master my-new-project
+    mv deckard-maven-master my-new-project
+    ```
+
+6. Run the setup script to install dependencies into Maven:
+    ```bash
+    my-new-project/setup.sh
     ```
 
 7. In the project directory you should be able to run the tests:
@@ -51,7 +50,7 @@ To start a new Android project:
     cd my-new-project
     mvn clean test
     ```
-        
+
 8. Optionally, import the project into IntelliJ (or Eclipse) by selecting 'Import Project' in IntelliJ and selecting the project's `pom.xml`. When prompted to pick an SDK you just need to select the Android SDK home and your JDK.
 
 9. Change the names of things from 'Deckard' to whatever is appropriate for your project. Package name, classes, and the AndroidManifest are good places to start.

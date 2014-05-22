@@ -33,16 +33,16 @@ To start a new Android project:
 	brew install maven
 	```
 
-5. Run the setup script to install dependencies into Maven:
-    ```bash
-    ./setup.sh
-    ```
-
-6. Download Deckard from GitHub:
+5. Download Deckard from GitHub:
     ```bash
     wget https://github.com/robolectric/deckard/archive/master.zip
     unzip master.zip
-    mv deckard-master my-new-project
+    mv deckard-maven-master my-new-project
+    ```
+
+6. Run the setup script to install dependencies into Maven:
+    ```bash
+    my-new-project/setup.sh
     ```
 
 7. In the project directory you should be able to run the tests:

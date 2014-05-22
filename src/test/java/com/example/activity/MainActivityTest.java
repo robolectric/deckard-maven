@@ -11,7 +11,7 @@ import static org.junit.Assert.assertTrue;
 public class MainActivityTest {
 
   @org.junit.Test
-  public void testSomething() throws Exception {
+  public void titleIsCorrect() throws Exception {
     Activity activity = Robolectric.setupActivity(MainActivity.class);
     assertTrue(activity.getTitle().toString().equals("Deckard"));
   }

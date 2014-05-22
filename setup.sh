@@ -2,6 +2,7 @@
 
 git clone https://github.com/mosabua/maven-android-sdk-deployer.git
 ( cd maven-android-sdk-deployer ; mvn install -P 4.3 )
+rm -rf maven-android-sdk-deployer
 
 jarLocation="$ANDROID_HOME/extras/android/m2repository/com/android/support/support-v4/19.0.1/support-v4-19.0.1.jar"
 if [ ! -f "$jarLocation" ]; then

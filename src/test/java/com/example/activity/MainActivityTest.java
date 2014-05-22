@@ -12,7 +12,7 @@ public class MainActivityTest {
 
   @org.junit.Test
   public void testSomething() throws Exception {
-    Activity activity = Robolectric.buildActivity(MainActivity.class).create().get();
-    assertTrue(activity != null);
+    Activity activity = Robolectric.setupActivity(MainActivity.class);
+    assertTrue(activity.getTitle().toString().equals("Deckard"));
   }
 }

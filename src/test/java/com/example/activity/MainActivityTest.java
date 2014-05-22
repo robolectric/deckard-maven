@@ -8,11 +8,11 @@ import org.robolectric.RobolectricTestRunner;
 import static org.junit.Assert.assertTrue;
 
 @RunWith(RobolectricTestRunner.class)
-public class DeckardActivityTest {
+public class MainActivityTest {
 
   @org.junit.Test
   public void testSomething() throws Exception {
-    Activity activity = Robolectric.buildActivity(DeckardActivity.class).create().get();
+    Activity activity = Robolectric.buildActivity(MainActivity.class).create().get();
     assertTrue(activity != null);
   }
 }

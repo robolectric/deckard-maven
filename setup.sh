@@ -2,7 +2,10 @@
 
 set -e
 
-echo "y" | android update sdk --no-ui --filter platform-tools,tools,build-tools-20.0.0,android-18,addon-google_apis-google-18,extra-android-support
+echo "y" | android update sdk --no-ui --filter platform-tools,tools
+echo "y" | android update sdk --no-ui --filter build-tools-20.0.0
+echo "y" | android update sdk --no-ui --filter android-18
+echo "y" | android update sdk --no-ui --filter addon-google_apis-google-18,extra-android-support
 
 git clone --depth 1 https://github.com/mosabua/maven-android-sdk-deployer.git
 cd maven-android-sdk-deployer

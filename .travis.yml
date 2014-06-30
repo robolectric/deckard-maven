@@ -1,8 +1,5 @@
 language: android
 jdk: oraclejdk7
-android:
-  components:
-     - addon-google_apis-google-18
 
 before_install:
     - ./setup.sh

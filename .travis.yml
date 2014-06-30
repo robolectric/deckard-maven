@@ -2,6 +2,7 @@ language: android
 jdk: oraclejdk7
 
 before_install:
+  - 'sudo mv /usr/local/android-sdk/tools/android-* /usr/local/bin'
   - ./setup.sh
 
 script:

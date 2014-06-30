@@ -2,6 +2,7 @@ language: android
 jdk: oraclejdk7
 android:
   components:
+     - platform-tools
      - addon-google_apis-google-18
 
 before_install:

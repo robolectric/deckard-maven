@@ -1,9 +1,12 @@
 language: android
 jdk: oraclejdk7
 
-before_install:
-  - 'sudo mv /usr/local/android-sdk/tools/android-* /usr/local/bin'
-  - ./setup.sh
+android:
+  components:
+    - build-tools-21.1.2
+    - android-18
+    - addon-google_apis-google-18
 
 script:
+  - ./setup.sh
   - mvn test

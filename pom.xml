@@ -21,16 +21,17 @@
         <dependency>
             <groupId>org.robolectric</groupId>
             <artifactId>robolectric</artifactId>
-            <version>2.4</version>
+            <version>3.0</version>
             <scope>test</scope>
         </dependency>
 
         <dependency>
             <groupId>android</groupId>
             <artifactId>android</artifactId>
-            <version>4.3.1_r3</version>
+            <version>5.0.1_r2</version>
             <scope>provided</scope>
         </dependency>
+
     </dependencies>
 
     <build>
@@ -50,7 +51,7 @@
                 <version>4.0.0</version>
                 <configuration>
                     <sdk>
-                        <platform>18</platform>
+                        <platform>21</platform>
                     </sdk>
                     <undeployBeforeDeploy>true</undeployBeforeDeploy>
                 </configuration>
